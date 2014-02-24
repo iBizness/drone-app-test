@@ -16,5 +16,5 @@ deploy:
   ssh:
     target: ubuntu@{{ip}}:/srv/www/ 22
     artifacts:
-      - ./
+      - /
     cmd: node app.js
