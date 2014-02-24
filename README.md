@@ -1,4 +1,3 @@
-drone-app-test
-==============
+NodeJS App to test a standalone instance of Drone.io
+===
 
-App to test Drone
