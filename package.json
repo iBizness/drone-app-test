@@ -2,12 +2,15 @@
   "name": "drone-app-test",
   "main": "app.js",
   "scripts": {
-    "start": "node app.js"
+    "start": "node app.js",
+    "test": "make test"
   },
   "engines": {
     "node": "*"
   },
-  "dependencies": {
-  },
-  "devDependencies": {}
+  "dependencies": {},
+  "devDependencies": {
+    "mocha": "~1.17.1",
+    "request": "~2.34.0"
+  }
 }
