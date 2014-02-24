@@ -16,7 +16,7 @@ deploy:
   ssh:
     target: ubuntu@{{ip}}:/srv/www/
     artifacts:
-      - *
+      - ./*
     cmd: 
       - npm install
       - node app.js
