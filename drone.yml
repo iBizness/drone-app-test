@@ -12,4 +12,5 @@ notify:
 notify:
   email:
     recipients:
-      - {{teamEmail}}
+      - {{teamEmail1}}
+      - {{teamEmail2}}
