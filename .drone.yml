@@ -1,9 +1,6 @@
 image: mischief/docker-golang
-env:
-  - GOPATH=/var/cache/drone
 script:
-  - go build
-  - go test -v
+  - npm test
 notify:
   hipchat:
     room: {{hipchatRoom}}
@@ -14,4 +11,5 @@ notify:
 notify:
   email:
     recipients:
-      - {{teamEmail}}
+      - {{teamEmail1}}
+      - {{teamEmail2}}
