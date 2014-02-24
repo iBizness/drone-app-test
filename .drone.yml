@@ -1,4 +1,5 @@
-image: mischief/docker-golang
+image: 
+  - node:0.10
 script:
   - npm test
 notify:
@@ -12,4 +13,3 @@ notify:
   email:
     recipients:
       - {{teamEmail1}}
-      - {{teamEmail2}}
