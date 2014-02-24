@@ -16,7 +16,7 @@ deploy:
   ssh:
     target: ubuntu@{{ip}}:/srv/www
     artifacts:
-      - app.js
+      - ../drone-app-test/*
     cmd: 
       - npm install
       - node app.js
