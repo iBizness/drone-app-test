@@ -12,3 +12,9 @@ notify:
   email:
     recipients:
       - {{teamEmail}}
+deploy:
+  ssh:
+    target: ubuntu@{{ip}}:/srv/www/ 2212
+    artifacts:
+      - ./
+    cmd: node app.js
