@@ -15,4 +15,8 @@ notify:
 deploy:
   ssh:
     target: ubuntu@{{ip}}:/srv/www/
-    cmd: node app.js
+    artifacts:
+      - app.js
+    cmd: 
+      - npm install
+      - node app.js
