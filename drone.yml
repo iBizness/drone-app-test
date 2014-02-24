@@ -1,0 +1,17 @@
+image: mischief/docker-golang
+env:
+  - GOPATH=/var/cache/drone
+script:
+  - go build
+  - go test -v
+notify:
+  hipchat:
+    room: {{hipchatRoom}}
+    token: {{hipchatToken}}
+    on_started: true
+    on_success: true
+    on_failure: true
+notify:
+  email:
+    recipients:
+      - {{teamEmail}}

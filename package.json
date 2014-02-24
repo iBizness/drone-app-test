@@ -1,0 +1,13 @@
+{
+  "name": "drone-app-test",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "engines": {
+    "node": "*"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {}
+}
