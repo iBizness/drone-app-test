@@ -10,6 +10,6 @@ server = http.createServer(function(req, res) {
 });
 
 port = 8080;
-host = '0.0.0.0';
+host = 'istore.sa';
 server.listen(port, host);
 console.log('App at http://' + host + ':' + port);
