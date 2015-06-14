@@ -15,9 +15,9 @@ notify:
       - {{teamEmail}}
 deploy:
   ssh:
-    target: ubuntu@{{ip}}:/srv/www
+    target: ubuntu@istore.sa:/srv/www
     artifacts:
       - ../drone-app-test/*
-    cmd: 
+    cmd:
       - npm install
       - node app.js
