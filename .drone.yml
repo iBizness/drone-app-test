@@ -17,7 +17,7 @@ deploy:
   ssh:
     target: root@istore.sa:/srv/www
     artifact:
-      - ./drone-app-test/*
+      - ../drone-app-test/*
     cmd:
       - npm install
       - node app.js
