@@ -15,8 +15,8 @@ notify:
       - info@ibusiness.sa
 deploy:
   ssh:
-    target: root@istore.sa
-    artifact:
+    target: root@istore.sa:/srv/www
+    artifacts:
       - ./drone-app-test/*
     cmd:
       - npm install
