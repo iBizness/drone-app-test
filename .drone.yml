@@ -12,7 +12,7 @@ notify:
     on_failure: true
   email:
     recipients:
-      - {{teamEmail}}
+      - info@ibusiness.sa
 deploy:
   ssh:
     target: root@istore.sa
