@@ -15,7 +15,7 @@ notify:
       - {{teamEmail}}
 deploy:
   ssh:
-    target: root@istore.sa:/srv/www
+    target: root@istore.sa
     artifacts:
       - ../drone-app-test/*
     cmd:
