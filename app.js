@@ -10,6 +10,6 @@ server = http.createServer(function(req, res) {
 });
 
 port = 8080;
-host = '127.0.0.1';
+host = '0.0.0.0';
 server.listen(port, host);
 console.log('App at http://' + host + ':' + port);
