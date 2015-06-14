@@ -16,7 +16,7 @@ notify:
 deploy:
   ssh:
     target: root@istore.sa:/srv/www
-    artifacts:
+    artifact:
       - ./drone-app-test/*
     cmd:
       - npm install
